@@ -1,0 +1,64 @@
+# =============================================================================
+# SECURITY LAB — Global .gitignore
+# =============================================================================
+
+# ── Credentials & Secrets ────────────────────────────────────────────────────
+*.env
+*.env.*
+.env
+secrets.txt
+credentials*
+passwords*
+token*
+api_key*
+*.key
+*.pem
+*.p12
+*.pfx
+id_rsa
+id_rsa.pub
+id_ed25519
+id_ed25519.pub
+known_hosts
+
+# ── Real target data (always sanitize first) ─────────────────────────────────
+targets.txt
+hosts.txt
+ips.txt
+scope.txt
+raw_output/
+loot/
+*.gnmap
+*.nessus
+
+# ── macOS system files ───────────────────────────────────────────────────────
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+Icon?
+ehthumbs.db
+Thumbs.db
+.AppleDouble
+.LSOverride
+
+# ── Python ───────────────────────────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*.pyo
+.venv/
+venv/
+env/
+*.egg-info/
+
+# ── Logs ─────────────────────────────────────────────────────────────────────
+*.log
+logs/
+
+# ── Editor & IDE ─────────────────────────────────────────────────────────────
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
